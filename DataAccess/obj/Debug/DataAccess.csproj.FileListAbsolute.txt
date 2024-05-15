@@ -1,0 +1,7 @@
+D:\Lean_University\Nam-3\HK2\DOT-Net\BTL\QuanlyShopGiayDep\DataAccess\bin\Debug\DataAccess.dll.config
+D:\Lean_University\Nam-3\HK2\DOT-Net\BTL\QuanlyShopGiayDep\DataAccess\bin\Debug\DataAccess.dll
+D:\Lean_University\Nam-3\HK2\DOT-Net\BTL\QuanlyShopGiayDep\DataAccess\bin\Debug\DataAccess.pdb
+D:\Lean_University\Nam-3\HK2\DOT-Net\BTL\QuanlyShopGiayDep\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+D:\Lean_University\Nam-3\HK2\DOT-Net\BTL\QuanlyShopGiayDep\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\Lean_University\Nam-3\HK2\DOT-Net\BTL\QuanlyShopGiayDep\DataAccess\obj\Debug\DataAccess.dll
+D:\Lean_University\Nam-3\HK2\DOT-Net\BTL\QuanlyShopGiayDep\DataAccess\obj\Debug\DataAccess.pdb

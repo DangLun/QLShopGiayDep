@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ShopGiayDep">
+  <DataContextMoniker Name="/ShopGiayDepDataContext" />
+  <nestedChildShapes>
+    <classShape Id="70be86c7-b997-491f-880b-d0945836dbae" absoluteBounds="3, 5.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ShopGiayDepDataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d866743-006b-468e-a267-45fb98e78d0d" absoluteBounds="3.015, 5.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d498d542-02ed-47c0-813e-ee4f31ec7029" absoluteBounds="0.625, 1.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/ShopGiayDepDataContext/Brand" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8579dab-8259-47cd-ac01-f5a4aa836d05" absoluteBounds="0.63999999999999968, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="78532d57-24a9-4089-9990-895fa10b3015" absoluteBounds="0.625, 3.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ShopGiayDepDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15481a85-15be-4c46-90eb-d5581ba88655" absoluteBounds="0.64000000000000012, 4.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6fb6acec-c7b4-42e4-ae4c-135a2cd7fbba" absoluteBounds="6, 1.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ShopGiayDepDataContext/InvoiceDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee66d307-60d3-493d-ac86-a92fb24b544e" absoluteBounds="6.015, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="25735875-3b58-4fa8-ab17-ab8b5d65d72c" absoluteBounds="5.875, 2.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ShopGiayDepDataContext/Invoice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0684252c-9184-4d8a-8e8d-2c14110b566a" absoluteBounds="5.8900000000000006, 3.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.9375 : 2.875); (6.9375 : 2.7612939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShopGiayDepDataContext/Invoice/Invoice_InvoiceDetail" />
+      <nodes>
+        <classShapeMoniker Id="25735875-3b58-4fa8-ab17-ab8b5d65d72c" />
+        <classShapeMoniker Id="6fb6acec-c7b4-42e4-ae4c-135a2cd7fbba" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.625 : 4.76524983723958); (7.78125 : 4.76524983723958); (7.78125 : 4.2612939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShopGiayDepDataContext/Customer/Customer_Invoice" />
+      <nodes>
+        <classShapeMoniker Id="78532d57-24a9-4089-9990-895fa10b3015" />
+        <classShapeMoniker Id="25735875-3b58-4fa8-ab17-ab8b5d65d72c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0c8759c2-41c7-4db7-9f08-e152413de84b" absoluteBounds="3.25, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ShopGiayDepDataContext/ProductDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="937270d4-db06-46d8-b749-8680b2952cd8" absoluteBounds="3.265, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5eba973e-3bf5-4e72-ad25-3c03273377cf" absoluteBounds="3.25, 2.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ShopGiayDepDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53597dcb-f3d4-4d8c-b509-d23419b20cfe" absoluteBounds="3.265, 2.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.25 : 2.50564697265625); (6 : 2.50564697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShopGiayDepDataContext/Product/Product_InvoiceDetail" />
+      <nodes>
+        <classShapeMoniker Id="5eba973e-3bf5-4e72-ad25-3c03273377cf" />
+        <classShapeMoniker Id="6fb6acec-c7b4-42e4-ae4c-135a2cd7fbba" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.25 : 2.25); (4.25 : 2.07859537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShopGiayDepDataContext/Product/Product_ProductDetail" />
+      <nodes>
+        <classShapeMoniker Id="5eba973e-3bf5-4e72-ad25-3c03273377cf" />
+        <classShapeMoniker Id="0c8759c2-41c7-4db7-9f08-e152413de84b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.625 : 2.31899251302083); (1.625 : 3.32774983723958); (3.25 : 3.32774983723958)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ShopGiayDepDataContext/Brand/Brand_Product" />
+      <nodes>
+        <classShapeMoniker Id="d498d542-02ed-47c0-813e-ee4f31ec7029" />
+        <classShapeMoniker Id="5eba973e-3bf5-4e72-ad25-3c03273377cf" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3b4356b7-44c0-4fdf-a4da-f645d8fe83ff" absoluteBounds="5.625, 5.125, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ShopGiayDepDataContext/Staff" />
+      <nestedChildShapes>
+        <elementListCompartment Id="def10bed-e685-4caa-b5d5-c22d4d668b51" absoluteBounds="5.6400000000000006, 5.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5 : 6.16429768880208); (5.625 : 6.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShopGiayDepDataContext/Account/Account_Staff" />
+      <nodes>
+        <classShapeMoniker Id="70be86c7-b997-491f-880b-d0945836dbae" />
+        <classShapeMoniker Id="3b4356b7-44c0-4fdf-a4da-f645d8fe83ff" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
